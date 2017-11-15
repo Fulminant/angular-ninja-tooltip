@@ -1,0 +1,55 @@
+.ninja-tooltip {
+  //display: none;
+  position: absolute;
+  background-color: $black;
+  padding: 7px 10px;
+  max-width: 200px;
+  color: $white;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+
+  &.active {
+    //display: inherit;
+    opacity: 1;
+  }
+
+  &.right {
+    .ninja-tooltip-arrow {
+      left: -5px;
+      top: 50%;
+      margin-top: -3px;
+      @include triangle('left', $black);
+    }
+  }
+
+  &.left {
+    .ninja-tooltip-arrow {
+      right: -5px;
+      top: 50%;
+      margin-top: -3px;
+      @include triangle('right', $black);
+    }
+  }
+
+  &.bottom {
+    .ninja-tooltip-arrow {
+      top: -5px;
+      left: 50%;
+      margin-left: -5px;
+      @include triangle('top', $black);
+    }
+  }
+
+  &.top {
+    .ninja-tooltip-arrow {
+      bottom: -5px;
+      left: 50%;
+      margin-left: -5px;
+      @include triangle('bottom', $black);
+    }
+  }
+}
+
+.ninja-tooltip-arrow {
+  position: absolute;
+}

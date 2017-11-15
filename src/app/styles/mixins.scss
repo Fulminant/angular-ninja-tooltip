@@ -1,0 +1,25 @@
+@mixin triangle($direction, $color) {
+  width: 0;
+  height: 0;
+
+  @if ($direction == 'top') {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $color;
+  }
+  @else if ($direction == 'bottom') {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $color;
+  }
+  @else if ($direction == 'left') {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid $color;
+  }
+  @else if ($direction == 'right') {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid $color;
+  }
+}
