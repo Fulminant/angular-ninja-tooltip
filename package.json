@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
-    "test": "gulp test"
+    "postinstall": "npm i typings -g && typings install"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",

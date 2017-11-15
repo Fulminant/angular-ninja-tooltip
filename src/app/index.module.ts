@@ -1,4 +1,4 @@
-/// <reference path="../../typings/main.d.ts" />
+/// <reference path="../../typings/index.d.ts" />
 
 import { config } from './index.config';
 import { routerConfig } from './index.route';
@@ -9,8 +9,8 @@ import { WebDevTecService } from '../app/components/webDevTec/webDevTec.service'
 import { acmeNavbar } from '../app/components/navbar/navbar.directive';
 import { acmeMalarkey } from '../app/components/malarkey/malarkey.directive';
 
-declare var malarkey: any;
-declare var moment: moment.MomentStatic;
+declare let malarkey: any;
+declare let moment: moment.MomentStatic;
 
 module angularNinjaTooltip {
   'use strict';

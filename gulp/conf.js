@@ -29,6 +29,13 @@ exports.wiredep = {
 };
 
 /**
+ * BrowserSync options.
+ */
+exports.bs = {
+  openBrowser: false
+};
+
+/**
  *  Common implementation for an error handler of a Gulp plugin
  */
 exports.errorHandler = function(title) {
